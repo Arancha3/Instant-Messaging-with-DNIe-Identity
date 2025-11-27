@@ -85,26 +85,6 @@ Ajusta esta ruta según tu sistema (Windows/Linux/macOS).
 
 ---
 
-## 📦 Instalación
-
-```bash
-git clone <url-del-repo>
-cd dni-im-raccoon
-
-python -m venv .venv
-source .venv/bin/activate  # en Windows: .venv\Scriptsctivate
-
-pip install -r requirements.txt   # o instala cryptography, PyKCS11, zeroconf, Pillow
-```
-
-Asegúrate de:
-
-1. Tener OpenSC instalado y funcionando con tu DNIe.  
-2. Ajustar `LIB_PATH` en `dnie.py`.  
-3. Tener `image_0.png` en el mismo directorio que `gui.py` para el fondo del chat.  
-
----
-
 ## ▶️ Uso
 
 1. Conecta el lector de tarjetas y el **DNIe**.
@@ -170,17 +150,3 @@ Asegúrate de:
 ```
 
 ---
-
-## 📌 Trabajo futuro / posibles mejoras
-
-- Soporte de grupos o salas de chat.
-- Mensajes offline y reenvío al reconectar.
-- Gestión de varios dispositivos/lectores y selección de certificado.
-- Logs detallados y herramientas de depuración de protocolo.
-- Empaquetado como aplicación ejecutable (PyInstaller, etc.).
-
----
-
-## 📄 Licencia
-
-Incluye aquí la licencia que quieras usar (por ejemplo, MIT, GPLv3, etc.).
