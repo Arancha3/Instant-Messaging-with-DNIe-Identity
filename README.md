@@ -60,8 +60,6 @@ Cliente de mensajería instantánea punto a punto que usa el **DNI electrónico 
   - Arranca el bucle `asyncio` en un hilo separado, con `DniIMProtocol` para manejar frames UDP.  
   - Implementa `DniIMApp`, que coordina discovery, handshakes, sesiones cifradas, envío/recepción de mensajes y actualización de contactos/GUI.
 
-- **`A2_IMP_intro.pdf`**  
-  Documento de enunciado original de la práctica, donde se describen los objetivos, requisitos de protocolo y metas de aprendizaje.
 
 ---
 
