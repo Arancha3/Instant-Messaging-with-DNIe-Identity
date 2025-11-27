@@ -142,7 +142,6 @@ Ajusta esta ruta según tu sistema (Windows/Linux/macOS).
 ├── protocol.py          # Frames UDP y CID
 ├── noise_crypto.py      # Primitivas Noise / X25519 / ChaCha20-Poly1305
 ├── contacts.py          # Libro de contactos persistente
-├── A2_IMP_intro.pdf     # Enunciado de la práctica
 ├── image_0.png          # Fondo mapache del chat
 └── contacts.json        # (se genera en tiempo de ejecución)
 ```
