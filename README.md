@@ -2,7 +2,7 @@
 
 Cliente de mensajería instantánea punto a punto que usa el **DNI electrónico (DNIe)** como identidad, descubre otros nodos en la LAN mediante **mDNS** y establece sesiones cifradas tipo **Noise IK** sobre **UDP** con una GUI en Tkinter.
 
-> Proyecto desarrollado como práctica de la asignatura “Instant Messaging with DNIe Identity”.
+> Proyecto desarrollado como práctica de la asignatura “Seguridad en redes y servicio 25/26”.
 
 ---
 
