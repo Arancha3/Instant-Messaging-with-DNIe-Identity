@@ -24,18 +24,9 @@ ROLE_RESPONDER = "responder"
 # PRIMITIVAS CRIPTO
 # ============================================================
 
-def blake2s_hash(data: bytes, digest_size: int = 32) -> bytes:
-    """
-    Hash BLAKE2s sencillo.
-    """
-    h = hashes.Hash(BLAKE2s(digest_size=digest_size))
-    h.update(data)
-    return h.finalize()
-
-
 def hkdf_blake2s(ikm: bytes, info: bytes, length: int = 64) -> bytes:
     """
-    HKDF(BLAKE2s) sin salt, tal y como se pide en la práctica.
+    HKDF(BLAKE2s) 
     """
     kdf = HKDF(
         algorithm=BLAKE2s(digest_size=32),
@@ -66,7 +57,7 @@ class KeyBundle:
 @dataclass
 class NoiseSession:
     """
-    Sesión de cifrado estilo Noise (muy simplificado).
+    Sesión de cifrado estilo Noise .
     """
     role: str
     sending_key: bytes
@@ -225,5 +216,6 @@ def perform_handshake_responder(
         sending_key=k_r_to_i,   # responder -> initiator
         receiving_key=k_i_to_r, # initiator -> responder
     )
+
 
 
