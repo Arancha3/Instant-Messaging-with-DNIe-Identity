@@ -15,7 +15,7 @@ Cliente de mensajería instantánea punto a punto que usa el **DNI electrónico 
   - X25519 (estáticas + efímeras)
   - HKDF-BLAKE2s para derivación de claves
   - ChaCha20-Poly1305 para cifrado autenticado.
-- Multiplexado sobre un único puerto **UDP 6666** usando **Connection IDs (CID)** y **stream IDs**.
+- Multiplexado sobre un único puerto **UDP 443** usando **Connection IDs (CID)** y **stream IDs**.
 - Libro de contactos persistente (`contacts.json`) asociado a fingerprints de certificados.
 - Interfaz gráfica en Tkinter con:
   - Sidebar de peers (online/offline)
