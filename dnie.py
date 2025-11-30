@@ -25,7 +25,7 @@ def _get_pkcs11():
 def login_with_pin(pin: str):
     """
     Abre sesión con el DNIe, carga el certificado y la clave privada
-    **correspondiente al certificado** usando CKA_ID (igual que firmadni3.py).
+    **correspondiente al certificado** usando CKA_ID .
 
     Devuelve el certificado X.509 ya parseado.
     """
@@ -51,7 +51,7 @@ def login_with_pin(pin: str):
     if not certs:
         raise RuntimeError("No se encontró ningún certificado en el DNIe")
 
-    # IMPORTANTE: igual que en tu ejemplo firmadni3.py → índice 2
+    
     cert_obj = certs[2]
 
     # Leer certificado DER
@@ -82,7 +82,6 @@ def login_with_pin(pin: str):
 def sign_dnie(data: bytes) -> bytes:
     """
     Firma 'data' con la clave privada del DNIe usando SHA256 + RSA PKCS#1 v1.5
-    (idéntico a firmadni3.py).
 
     Esta firma se verifica correctamente en:
         cert.public_key().verify(sig, data, PKCS1v15(), SHA256())
@@ -128,4 +127,5 @@ def logout():
     _session = None
     _cert = None
     _priv_key_handle = None
+
 
