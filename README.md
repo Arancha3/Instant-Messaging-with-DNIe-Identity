@@ -21,7 +21,7 @@ Cliente de mensajería instantánea punto a punto que usa el **DNI electrónico 
   - Sidebar de peers (online/offline)
   - Historial por contacto
   - Burbujas de chat y mensajes de seguridad
-  - Fondo con el mapache nadador 🦝.
+  - Fondo con imagen.
 
 ---
 
@@ -110,7 +110,7 @@ Ajusta esta ruta según tu sistema (Windows/Linux/macOS).
 
 ---
 
-## 🔐 Protocolo y criptografía (resumen)
+## 🔐 Protocolo y criptografía
 
 - **Formato de frame UDP**
 
